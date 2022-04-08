@@ -1,0 +1,259 @@
+/*common styles*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "ost", sans-serif;
+    font: weight 400 ;
+}
+
+html {
+    font-size: 62.5%; 
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Common style end*/
+
+/*Section 1*/
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.3)), url(images/bg.jpg) center no-repeat;
+    background-size: cover;
+
+    flex-direction: column;
+
+}
+.section-1-heading {
+    font-size: 6rem;
+    font-weight: 700;
+    color: white;
+    background-color: coral;
+    padding: 0.3cm;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    border-bottom: 0.3rem solid white;
+    text-shadow: .2rem .2rem 1rem #555;
+    transform: skew(-10deg);
+}
+
+.person-img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius:50%;
+    border: 0.7rem dotted coral;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
+    opacity: 0.9;
+}
+
+.person-name {
+    font-size: 2rem;
+    color: white;
+    background-color: coral;
+    margin: 5rem 0;
+    padding: 0.5rem 0.3rem;
+    letter-spacing: 0.3rem;
+    transform: skew(-10deg);
+}
+
+.section-1-btn {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #333;
+    background-color: white;
+    border: .3rem solid #333;
+    padding: .5rem 1rem; 
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+/*section 1 end*/
+
+/* Nav Bar */
+.navbar {
+    width: 100%;
+    height: 4rem;
+    background-color: coral;
+    box-shadow: .2rem,.2rem,.5rem #555;
+}
+
+.navbar-link {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #555;
+    margin: 0 5rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.2s;
+    
+}
+
+.navbar-link:hover {
+    color: white;
+}
+
+.navbar-link::before {
+    content:  "";
+    width: 0%;
+    height: .2rem;
+    background-color: white;
+    position: absolute;
+    right: -15%;
+    bottom: -0.3rem;
+    transition: width 0.2s ;
+}
+
+.navbar-link:hover::before {
+    width: 130%;
+}
+
+/* End of Nav Bar */
+
+/* Section 2 */
+.section-2 {
+    width: 100%;
+    height: 100%;
+    padding: 15rem 0 10rem 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-2-heading {
+    font-size: 5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 15rem;
+    border-bottom: .3rem solid #333;
+    text-shadow: .2rem .5rem .5rem #555;
+
+}
+
+.progress-bar-wrapper {
+    margin-bottom: 10rem;
+}
+.progress-bar {
+    width: 60rem;
+    height: 3rem;
+    background-color: #ccc;
+    margin: 1.5rem 0;
+    border-radius: .3rem;
+    box-shadow: .2rem .2rem 1rem #555;
+    position: relative;
+}
+
+.progress-text {
+    position: absolute;
+    left: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.progress-text span {
+    margin:0 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.progress-percent {
+    width: 90%;
+    height: 100%;
+    background-color: coral;
+    border-radius: .3rem;
+}
+
+.services {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.service:first-child,
+.service:last-child {
+    align-self: flex-end;
+}
+
+.service {
+    text-align: center;
+}
+
+.service i {
+    font-size: 10rem;
+    color: #888;
+    margin-bottom: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.5 rem #555;
+}
+
+.service h2 {
+    font-size: 2rem;
+    color: white;
+    background-color: #777;
+    width: 25rem;
+    letter-spacing: 0.5rem;
+    transform: skew(-10deg);
+    box-shadow: .2rem .2rem .5rem #555;
+}
+/* End of Section 2 */
+/* Section 4 */
+.section-4 {
+    width: 100%;
+    height: 70vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section-4-heading {
+    font-size: 5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 15rem;
+    border-bottom: .3rem solid white;
+    text-shadow: .2rem .5rem .5rem black;
+}
+
+.contact-form {
+    width: 50rem;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    background-color: #eef;
+    border: .2rem solid coral;
+    color: #555;
+}
+
+.contact-form textarea {
+    height: 10rem;
+    max-width: 100%;
+    max-height: 15rem;
+}
+
+.contact-form .Contact-form-btn {
+    background-color: coral;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    cursor: pointer ;
+}
+
+/* End of Section 4 */
